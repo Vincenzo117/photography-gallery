@@ -20,9 +20,9 @@
     <section id="home-section">
 
         <nav>
-            <div class="category">Studio</div>
-            <div class="category">Outdoor</div>
-            <div class="category">Marriage</div>
+            <div class="category"><a href="#studio"> Studio </a></div>
+            <div class="category"><a href="#outdoor"> Outdoor </a></div>
+            <div class="category"><a href="#marriage"> Marriage </a></div>
         </nav>
 
         <div class="left side">
@@ -36,7 +36,7 @@
             </div>
 
 
-            <div class="scroll">scroll to discover <br> <i class="fas fa-chevron-down"></i></div>
+            <div class="scroll"><a href="#studio">scroll to discover <br> <i class="fas fa-chevron-down"></i></a></div>
 
         </div>
 
@@ -49,6 +49,108 @@
             </div>
 
         </div>
+
+    </section>
+
+
+    <section id="studio">
+
+        <div class="left side">
+
+            <div class="logo">Studio</div>
+
+
+            <div class="left-img-wrapper">
+                <img src="img/Portrait.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+
+
+            <div class="scroll"><a href="#outdoor">scroll to discover <br> <i class="fas fa-chevron-down"></i></a></div>
+
+        </div>
+
+
+        <div class="right side">
+
+
+            <div class="right-img-wrapper">
+                <img src="img/Portrait.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="outdoor">
+
+        <div class="left side">
+
+            <div class="logo">Outdoor</div>
+
+
+            <div class="left-img-wrapper">
+                <img src="img/Portrait.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+
+
+            <div class="scroll"><a href="#marriage">scroll to discover <br> <i class="fas fa-chevron-down"></i></a></div>
+
+        </div>
+
+
+        <div class="right side">
+
+
+            <div class="right-img-wrapper">
+                <img src="img/Portrait.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <section id="marriage">
+
+        <div class="left side">
+
+            <div class="logo">Marriage</div>
+
+
+            <div class="left-img-wrapper">
+                <img src="img/Portrait.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+
+
+            <div class="scroll"><a href="#home-section"> <i class="fas fa-chevron-up"></i> <br> return to the home </a></div>
+
+        </div>
+
+
+        <div class="right side">
+
+
+            <div class="right-img-wrapper">
+                <img src="img/Portrait.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
 
     </section>
 
@@ -79,18 +181,18 @@
     <script>
         //common reveal options to create reveal animations
         ScrollReveal({
-          //reset: true,
-          distance: '60px',
-          duration: 2500,
-          delay: 400
+            //reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
         });
-  
+
         //target elements, and specify options to create reveal animations
         ScrollReveal().reveal('.logo , .left-img-wrapper', { delay: 500, origin: 'left', interval: 300 });
         ScrollReveal().reveal(' .right-img-wrapper', { delay: 1500, origin: 'right' });
         ScrollReveal().reveal(' nav ', { delay: 2500, origin: 'bottom' });
         ScrollReveal().reveal(' .scroll ', { delay: 2500, origin: 'bottom' });
-      </script>
+    </script>
 
 </body>
 
