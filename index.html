@@ -30,7 +30,7 @@
             <div class="logo">Agnieszka Dominik</div>
 
 
-            <div class="img-wrapper">
+            <div class="left-img-wrapper">
                 <img src="img/Portrait.jpg" alt="">
                 <div class="overlay"></div>
             </div>
@@ -44,7 +44,7 @@
         <div class="right side">
 
 
-            <div class="img-wrapper">
+            <div class="right-img-wrapper">
                 <img src="img/Portrait.jpg" alt="">
             </div>
 
@@ -76,7 +76,21 @@
 
 
 
-
+    <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+          //reset: true,
+          distance: '60px',
+          duration: 2500,
+          delay: 400
+        });
+  
+        //target elements, and specify options to create reveal animations
+        ScrollReveal().reveal('.logo , .left-img-wrapper', { delay: 500, origin: 'left', interval: 300 });
+        ScrollReveal().reveal(' .right-img-wrapper', { delay: 1500, origin: 'right' });
+        ScrollReveal().reveal(' nav ', { delay: 2500, origin: 'bottom' });
+        ScrollReveal().reveal(' .scroll ', { delay: 2500, origin: 'bottom' });
+      </script>
 
 </body>
 

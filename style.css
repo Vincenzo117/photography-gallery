@@ -12,7 +12,7 @@ html{
 }
 
 body{
-  background: #fa97aba6;
+  background: #fbafbe;
 }
 
 img {
@@ -25,6 +25,7 @@ img {
     font-family: 'Cormorant Garamond', serif;
     padding: 30px;
     color: #a04c5cfb;
+    font-style: italic;
 }
 
 
@@ -73,14 +74,14 @@ img {
 
 }
 
-#home-section .left.side .img-wrapper {
+#home-section .left.side .left-img-wrapper  {
     position: relative;
     align-self: center;
     width: 18vw;
     aspect-ratio: 4 / 5;
 }
 
-#home-section .left.side .img-wrapper img {
+#home-section .left.side .left-img-wrapper img {
     display: inline-block;
     vertical-align: middle;
 }
@@ -101,6 +102,9 @@ img {
 }
 
 #home-section .right img {
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
     filter: hue-rotate(320deg);
     transition: all 1400ms;
 }
@@ -123,4 +127,22 @@ img {
 
 #home-section .scroll i {
     font-size: 10px;
+}
+
+#home-section .category {
+    cursor: pointer;
+    transition: all 700ms;
+}
+
+#home-section .category:hover {
+    color: white;
+}
+
+#home-section .scroll {
+    cursor: pointer;
+    transition: color 700ms;
+}
+
+#home-section .scroll:hover {   
+    color: white;
 }
